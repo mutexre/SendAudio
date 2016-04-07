@@ -7,9 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8702AE7B16063B73BA9DCD8F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD63818F9A17E808CD22654 /* libPods.a */; };
-		927088BC1CAC19DF000C2550 /* server.mm in Sources */ = {isa = PBXBuildFile; fileRef = 927088BB1CAC19DF000C2550 /* server.mm */; };
-		927088C71CAC2015000C2550 /* client.mm in Sources */ = {isa = PBXBuildFile; fileRef = 927088C61CAC2015000C2550 /* client.mm */; };
+		1844EB4A0D995AA20C7B1ABA /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 432174DD907B8777E5280578 /* libPods-Tests.a */; };
+		61EFC11544A63E981D1F8915 /* libPods-Client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9504B272B1247D725728E095 /* libPods-Client.a */; };
+		8DD49EF1492DB8F99CE44F9D /* libPods-Server.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CB2983B13A9A8871FB3E9D /* libPods-Server.a */; };
+		92A069571CB04123005C4516 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A069561CB04123005C4516 /* CoreAudio.framework */; };
+		92A0695B1CB19542005C4516 /* AudioManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92A069591CB19542005C4516 /* AudioManager.cpp */; };
+		92A069691CB1AC09005C4516 /* AudioManagerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92A069681CB1AC09005C4516 /* AudioManagerTest.cpp */; };
+		92A0696A1CB296D3005C4516 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A069561CB04123005C4516 /* CoreAudio.framework */; };
+		92B7A15F1CAD93EE00CB24FE /* server.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92B7A15E1CAD93EE00CB24FE /* server.mm */; };
+		92B7A1611CAD940200CB24FE /* client.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92B7A1601CAD940200CB24FE /* client.mm */; };
+		92B7A16B1CAE463D00CB24FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B7A16A1CAE463D00CB24FE /* main.m */; };
+		92B7A16E1CAE463D00CB24FE /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92B7A16D1CAE463D00CB24FE /* AppDelegate.mm */; };
+		92B7A1711CAE463D00CB24FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B7A1701CAE463D00CB24FE /* ViewController.m */; };
+		92B7A1741CAE463D00CB24FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B7A1721CAE463D00CB24FE /* Main.storyboard */; };
+		92B7A1761CAE463D00CB24FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B7A1751CAE463D00CB24FE /* Assets.xcassets */; };
+		92B7A1791CAE463D00CB24FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B7A1771CAE463D00CB24FE /* LaunchScreen.storyboard */; };
+		A177A890ADE33F81AA941C5F /* libPods-Receive Audio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B72F22CAEA28EE095B1FCB76 /* libPods-Receive Audio.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,16 +44,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		92A0695F1CB1ABB7005C4516 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1FD63818F9A17E808CD22654 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2626A3F0E18A9F3D7521C557 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		6AE8FAC2FA165E82916BCB3A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		09DF1BF2AE184B91AC259A6F /* Pods-Receive Audio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Receive Audio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Receive Audio/Pods-Receive Audio.release.xcconfig"; sourceTree = "<group>"; };
+		19A5B3E68E0A3E8CBD009C99 /* Pods-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-Client/Pods-Client.release.xcconfig"; sourceTree = "<group>"; };
+		432174DD907B8777E5280578 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5127FBCFDE1B028DEA432B95 /* Pods-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Client/Pods-Client.debug.xcconfig"; sourceTree = "<group>"; };
 		927088B81CAC19DF000C2550 /* Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Server; sourceTree = BUILT_PRODUCTS_DIR; };
-		927088BB1CAC19DF000C2550 /* server.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = server.mm; sourceTree = "<group>"; };
 		927088C41CAC2015000C2550 /* Client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Client; sourceTree = BUILT_PRODUCTS_DIR; };
-		927088C61CAC2015000C2550 /* client.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = client.mm; path = ../Client/client.mm; sourceTree = "<group>"; };
+		92A069561CB04123005C4516 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		92A069591CB19542005C4516 /* AudioManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioManager.cpp; path = Sources/Audio/AudioManager.cpp; sourceTree = SOURCE_ROOT; };
+		92A0695A1CB19542005C4516 /* AudioManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AudioManager.hpp; path = Sources/Audio/AudioManager.hpp; sourceTree = SOURCE_ROOT; };
+		92A069611CB1ABB7005C4516 /* Tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tests; sourceTree = BUILT_PRODUCTS_DIR; };
+		92A069681CB1AC09005C4516 /* AudioManagerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioManagerTest.cpp; path = Test/Audio/AudioManagerTest.cpp; sourceTree = SOURCE_ROOT; };
+		92A0696B1CB4F673005C4516 /* Option.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Option.hpp; path = Sources/Option.hpp; sourceTree = SOURCE_ROOT; };
+		92B7A15E1CAD93EE00CB24FE /* server.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = server.mm; path = Sources/server.mm; sourceTree = SOURCE_ROOT; };
+		92B7A1601CAD940200CB24FE /* client.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = client.mm; path = Sources/client.mm; sourceTree = SOURCE_ROOT; };
+		92B7A1621CAD990C00CB24FE /* shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = shared.h; path = Sources/shared.h; sourceTree = SOURCE_ROOT; };
+		92B7A1671CAE463C00CB24FE /* Receive Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Receive Audio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B7A16A1CAE463D00CB24FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92B7A16C1CAE463D00CB24FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		92B7A16D1CAE463D00CB24FE /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		92B7A16F1CAE463D00CB24FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		92B7A1701CAE463D00CB24FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		92B7A1731CAE463D00CB24FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92B7A1751CAE463D00CB24FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92B7A1781CAE463D00CB24FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92B7A17A1CAE463D00CB24FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B7A17E1CAE4E3F00CB24FE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9504B272B1247D725728E095 /* libPods-Client.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Client.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9595073DB34C7A11D574ACCA /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B72F22CAEA28EE095B1FCB76 /* libPods-Receive Audio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Receive Audio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8CB2983B13A9A8871FB3E9D /* libPods-Server.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Server.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5898BE7760F1B8EE73E1F1A /* Pods-Server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Server.release.xcconfig"; path = "Pods/Target Support Files/Pods-Server/Pods-Server.release.xcconfig"; sourceTree = "<group>"; };
+		DC4FB894F2F8249229C44E24 /* Pods-Receive Audio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Receive Audio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Receive Audio/Pods-Receive Audio.debug.xcconfig"; sourceTree = "<group>"; };
+		DD27D5EC120B8C9B8DD4ED92 /* Pods-Server.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Server.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Server/Pods-Server.debug.xcconfig"; sourceTree = "<group>"; };
+		EEEC12289D1412DA70271541 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8702AE7B16063B73BA9DCD8F /* libPods.a in Frameworks */,
+				92A069571CB04123005C4516 /* CoreAudio.framework in Frameworks */,
+				8DD49EF1492DB8F99CE44F9D /* libPods-Server.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,27 +106,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61EFC11544A63E981D1F8915 /* libPods-Client.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A0695E1CB1ABB7005C4516 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A0696A1CB296D3005C4516 /* CoreAudio.framework in Frameworks */,
+				1844EB4A0D995AA20C7B1ABA /* libPods-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92B7A1641CAE463C00CB24FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A177A890ADE33F81AA941C5F /* libPods-Receive Audio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		233F45B91FD773CAB0E37050 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1FD63818F9A17E808CD22654 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		927088AC1CAC1993000C2550 = {
 			isa = PBXGroup;
 			children = (
+				92B7A17E1CAE4E3F00CB24FE /* Podfile */,
 				927088BA1CAC19DF000C2550 /* Source */,
+				92A069581CB19510005C4516 /* Audio */,
+				92B7A1681CAE463D00CB24FE /* Receive Audio */,
+				92A0695C1CB1AB76005C4516 /* Tests */,
 				927088B91CAC19DF000C2550 /* Products */,
-				D4AFF6A6E08FF1D29D211466 /* Pods */,
-				233F45B91FD773CAB0E37050 /* Frameworks */,
+				D2853BFD0553329244C45CFC /* Pods */,
+				C021DE18314300200BA62BDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +149,8 @@
 			children = (
 				927088B81CAC19DF000C2550 /* Server */,
 				927088C41CAC2015000C2550 /* Client */,
+				92B7A1671CAE463C00CB24FE /* Receive Audio.app */,
+				92A069611CB1ABB7005C4516 /* Tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,18 +158,81 @@
 		927088BA1CAC19DF000C2550 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				927088BB1CAC19DF000C2550 /* server.mm */,
-				927088C61CAC2015000C2550 /* client.mm */,
+				92B7A15E1CAD93EE00CB24FE /* server.mm */,
+				92B7A1601CAD940200CB24FE /* client.mm */,
+				92A0696B1CB4F673005C4516 /* Option.hpp */,
+				92B7A1621CAD990C00CB24FE /* shared.h */,
 			);
 			name = Source;
 			path = Server;
 			sourceTree = "<group>";
 		};
-		D4AFF6A6E08FF1D29D211466 /* Pods */ = {
+		92A069581CB19510005C4516 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				6AE8FAC2FA165E82916BCB3A /* Pods.debug.xcconfig */,
-				2626A3F0E18A9F3D7521C557 /* Pods.release.xcconfig */,
+				92A0695A1CB19542005C4516 /* AudioManager.hpp */,
+				92A069591CB19542005C4516 /* AudioManager.cpp */,
+			);
+			name = Audio;
+			path = Server;
+			sourceTree = "<group>";
+		};
+		92A0695C1CB1AB76005C4516 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				92A069681CB1AC09005C4516 /* AudioManagerTest.cpp */,
+			);
+			name = Tests;
+			path = Server;
+			sourceTree = "<group>";
+		};
+		92B7A1681CAE463D00CB24FE /* Receive Audio */ = {
+			isa = PBXGroup;
+			children = (
+				92B7A16C1CAE463D00CB24FE /* AppDelegate.h */,
+				92B7A16D1CAE463D00CB24FE /* AppDelegate.mm */,
+				92B7A16F1CAE463D00CB24FE /* ViewController.h */,
+				92B7A1701CAE463D00CB24FE /* ViewController.m */,
+				92B7A1721CAE463D00CB24FE /* Main.storyboard */,
+				92B7A1751CAE463D00CB24FE /* Assets.xcassets */,
+				92B7A1771CAE463D00CB24FE /* LaunchScreen.storyboard */,
+				92B7A17A1CAE463D00CB24FE /* Info.plist */,
+				92B7A1691CAE463D00CB24FE /* Supporting Files */,
+			);
+			path = "Receive Audio";
+			sourceTree = "<group>";
+		};
+		92B7A1691CAE463D00CB24FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92B7A16A1CAE463D00CB24FE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C021DE18314300200BA62BDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92A069561CB04123005C4516 /* CoreAudio.framework */,
+				9504B272B1247D725728E095 /* libPods-Client.a */,
+				B72F22CAEA28EE095B1FCB76 /* libPods-Receive Audio.a */,
+				B8CB2983B13A9A8871FB3E9D /* libPods-Server.a */,
+				432174DD907B8777E5280578 /* libPods-Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2853BFD0553329244C45CFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5127FBCFDE1B028DEA432B95 /* Pods-Client.debug.xcconfig */,
+				19A5B3E68E0A3E8CBD009C99 /* Pods-Client.release.xcconfig */,
+				DC4FB894F2F8249229C44E24 /* Pods-Receive Audio.debug.xcconfig */,
+				09DF1BF2AE184B91AC259A6F /* Pods-Receive Audio.release.xcconfig */,
+				DD27D5EC120B8C9B8DD4ED92 /* Pods-Server.debug.xcconfig */,
+				D5898BE7760F1B8EE73E1F1A /* Pods-Server.release.xcconfig */,
+				EEEC12289D1412DA70271541 /* Pods-Tests.debug.xcconfig */,
+				9595073DB34C7A11D574ACCA /* Pods-Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -115,11 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 927088BD1CAC19DF000C2550 /* Build configuration list for PBXNativeTarget "Server" */;
 			buildPhases = (
-				3F69664D27F559371FED5C7E /* Check Pods Manifest.lock */,
+				941A819B358B68BA79A73FCC /* 📦 Check Pods Manifest.lock */,
 				927088B41CAC19DF000C2550 /* Sources */,
 				927088B51CAC19DF000C2550 /* Frameworks */,
 				927088B61CAC19DF000C2550 /* CopyFiles */,
-				A1D04C828A83D9DE5C9BACD1 /* Copy Pods Resources */,
+				CA12D82DD4086BCB8868A634 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 927088C81CAC2015000C2550 /* Build configuration list for PBXNativeTarget "Client" */;
 			buildPhases = (
+				EE0005E8424127FF42D4D411 /* 📦 Check Pods Manifest.lock */,
 				927088C01CAC2015000C2550 /* Sources */,
 				927088C11CAC2015000C2550 /* Frameworks */,
 				927088C21CAC2015000C2550 /* CopyFiles */,
+				83AE4CEDCA6E52C1F8778027 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +277,45 @@
 			productName = Client;
 			productReference = 927088C41CAC2015000C2550 /* Client */;
 			productType = "com.apple.product-type.tool";
+		};
+		92A069601CB1ABB7005C4516 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92A069651CB1ABB7005C4516 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				FE28045A0231717A56CBB0D1 /* 📦 Check Pods Manifest.lock */,
+				92A0695D1CB1ABB7005C4516 /* Sources */,
+				92A0695E1CB1ABB7005C4516 /* Frameworks */,
+				92A0695F1CB1ABB7005C4516 /* CopyFiles */,
+				07402B88F032DFDFF45D18E6 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = "AudioManager Tests";
+			productReference = 92A069611CB1ABB7005C4516 /* Tests */;
+			productType = "com.apple.product-type.tool";
+		};
+		92B7A1661CAE463C00CB24FE /* Receive Audio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92B7A17B1CAE463D00CB24FE /* Build configuration list for PBXNativeTarget "Receive Audio" */;
+			buildPhases = (
+				12469C1F886C74471E07E231 /* 📦 Check Pods Manifest.lock */,
+				92B7A1631CAE463C00CB24FE /* Sources */,
+				92B7A1641CAE463C00CB24FE /* Frameworks */,
+				92B7A1651CAE463C00CB24FE /* Resources */,
+				9A3547E522DC89AB1DD97ED3 /* 📦 Embed Pods Frameworks */,
+				8F1D63C0F54CDF2BD11EB084 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Receive Audio";
+			productName = "Receive Audio";
+			productReference = 92B7A1671CAE463C00CB24FE /* Receive Audio.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -161,6 +331,12 @@
 					927088C31CAC2015000C2550 = {
 						CreatedOnToolsVersion = 7.3;
 					};
+					92A069601CB1ABB7005C4516 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					92B7A1661CAE463C00CB24FE = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
 			buildConfigurationList = 927088B01CAC1993000C2550 /* Build configuration list for PBXProject "SendAudio" */;
@@ -169,6 +345,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 927088AC1CAC1993000C2550;
 			productRefGroup = 927088B91CAC19DF000C2550 /* Products */;
@@ -177,19 +354,49 @@
 			targets = (
 				927088B71CAC19DF000C2550 /* Server */,
 				927088C31CAC2015000C2550 /* Client */,
+				92B7A1661CAE463C00CB24FE /* Receive Audio */,
+				92A069601CB1ABB7005C4516 /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		92B7A1651CAE463C00CB24FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92B7A1791CAE463D00CB24FE /* LaunchScreen.storyboard in Resources */,
+				92B7A1761CAE463D00CB24FE /* Assets.xcassets in Resources */,
+				92B7A1741CAE463D00CB24FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
-		3F69664D27F559371FED5C7E /* Check Pods Manifest.lock */ = {
+		07402B88F032DFDFF45D18E6 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12469C1F886C74471E07E231 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,19 +404,109 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A1D04C828A83D9DE5C9BACD1 /* Copy Pods Resources */ = {
+		83AE4CEDCA6E52C1F8778027 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Client/Pods-Client-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F1D63C0F54CDF2BD11EB084 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Receive Audio/Pods-Receive Audio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		941A819B358B68BA79A73FCC /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A3547E522DC89AB1DD97ED3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Receive Audio/Pods-Receive Audio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA12D82DD4086BCB8868A634 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Server/Pods-Server-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE0005E8424127FF42D4D411 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE28045A0231717A56CBB0D1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -219,7 +516,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				927088BC1CAC19DF000C2550 /* server.mm in Sources */,
+				92A0695B1CB19542005C4516 /* AudioManager.cpp in Sources */,
+				92B7A15F1CAD93EE00CB24FE /* server.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,34 +525,83 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				927088C71CAC2015000C2550 /* client.mm in Sources */,
+				92B7A1611CAD940200CB24FE /* client.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A0695D1CB1ABB7005C4516 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A069691CB1AC09005C4516 /* AudioManagerTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92B7A1631CAE463C00CB24FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92B7A1711CAE463D00CB24FE /* ViewController.m in Sources */,
+				92B7A16E1CAE463D00CB24FE /* AppDelegate.mm in Sources */,
+				92B7A16B1CAE463D00CB24FE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		92B7A1721CAE463D00CB24FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92B7A1731CAE463D00CB24FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92B7A1771CAE463D00CB24FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92B7A1781CAE463D00CB24FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		927088B11CAC1993000C2550 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.60.0_1/include;
-				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.60.0_1/lib;
-				OTHER_LDFLAGS = "-lboost_system";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public/Novocaine\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
 			};
 			name = Debug;
 		};
 		927088B21CAC1993000C2550 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.60.0_1/include;
-				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.60.0_1/lib;
-				OTHER_LDFLAGS = "-lboost_system";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public/Novocaine\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
 			};
 			name = Release;
 		};
 		927088BE1CAC19DF000C2550 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AE8FAC2FA165E82916BCB3A /* Pods.debug.xcconfig */;
+			baseConfigurationReference = DD27D5EC120B8C9B8DD4ED92 /* Pods-Server.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -280,16 +627,15 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "${inherited}";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -300,7 +646,7 @@
 		};
 		927088BF1CAC19DF000C2550 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2626A3F0E18A9F3D7521C557 /* Pods.release.xcconfig */;
+			baseConfigurationReference = D5898BE7760F1B8EE73E1F1A /* Pods-Server.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -324,12 +670,15 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "${inherited}";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -339,6 +688,100 @@
 		};
 		927088C91CAC2015000C2550 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5127FBCFDE1B028DEA432B95 /* Pods-Client.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${inherited}";
+				LIBRARY_SEARCH_PATHS = (
+					"${inherited}",
+					/usr/local/Cellar/boost/1.60.0_1/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		927088CA1CAC2015000C2550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A5B3E68E0A3E8CBD009C99 /* Pods-Client.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${inherited}";
+				LIBRARY_SEARCH_PATHS = (
+					"${inherited}",
+					/usr/local/Cellar/boost/1.60.0_1/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		92A069661CB1ABB7005C4516 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEEC12289D1412DA70271541 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -374,16 +817,28 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$CONFIGURATION_BUILD_DIR/libopus-OSX\"",
+					/usr/local/Cellar/boost/1.60.0_1/lib,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"libopus-OSX\"",
+					"-lboost_unit_test_framework",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		927088CA1CAC2015000C2550 /* Release */ = {
+		92A069671CB1ABB7005C4516 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9595073DB34C7A11D574ACCA /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -413,10 +868,149 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$CONFIGURATION_BUILD_DIR/libopus-OSX\"",
+					/usr/local/Cellar/boost/1.60.0_1/lib,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"libopus-OSX\"",
+					"-lboost_unit_test_framework",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		92B7A17C1CAE463D00CB24FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4FB894F2F8249229C44E24 /* Pods-Receive Audio.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Receive Audio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$CONFIGURATION_BUILD_DIR/Novocaine-iOS\"",
+					"../src/boost_1_60_0/iphone-build/boost/bin.v2/libs/system/build/darwin-9.3~iphone/release/architecture-arm/link-static/macosx-version-iphone-9.3/target-os-iphone/threading-multi/",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Novocaine-iOS\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AudioToolbox\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutexre.Receive-Audio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92B7A17D1CAE463D00CB24FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09DF1BF2AE184B91AC259A6F /* Pods-Receive Audio.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Receive Audio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$CONFIGURATION_BUILD_DIR/Novocaine-iOS\"",
+					"../src/boost_1_60_0/iphone-build/boost/bin.v2/libs/system/build/darwin-9.3~iphone/release/architecture-arm/link-static/macosx-version-iphone-9.3/target-os-iphone/threading-multi/",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Novocaine-iOS\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AudioToolbox\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutexre.Receive-Audio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -446,6 +1040,24 @@
 			buildConfigurations = (
 				927088C91CAC2015000C2550 /* Debug */,
 				927088CA1CAC2015000C2550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92A069651CB1ABB7005C4516 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A069661CB1ABB7005C4516 /* Debug */,
+				92A069671CB1ABB7005C4516 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92B7A17B1CAE463D00CB24FE /* Build configuration list for PBXNativeTarget "Receive Audio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92B7A17C1CAE463D00CB24FE /* Debug */,
+				92B7A17D1CAE463D00CB24FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
