@@ -11,9 +11,10 @@
 		61EFC11544A63E981D1F8915 /* libPods-Client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9504B272B1247D725728E095 /* libPods-Client.a */; };
 		8DD49EF1492DB8F99CE44F9D /* libPods-Server.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CB2983B13A9A8871FB3E9D /* libPods-Server.a */; };
 		92A069571CB04123005C4516 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A069561CB04123005C4516 /* CoreAudio.framework */; };
-		92A0695B1CB19542005C4516 /* AudioManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92A069591CB19542005C4516 /* AudioManager.cpp */; };
 		92A069691CB1AC09005C4516 /* AudioManagerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92A069681CB1AC09005C4516 /* AudioManagerTest.cpp */; };
 		92A0696A1CB296D3005C4516 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A069561CB04123005C4516 /* CoreAudio.framework */; };
+		92A069761CB6427E005C4516 /* Helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92A069741CB6427E005C4516 /* Helper.cpp */; };
+		92A0697F1CB949B8005C4516 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92A0697E1CB949B8005C4516 /* Object.cpp */; };
 		92B7A15F1CAD93EE00CB24FE /* server.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92B7A15E1CAD93EE00CB24FE /* server.mm */; };
 		92B7A1611CAD940200CB24FE /* client.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92B7A1601CAD940200CB24FE /* client.mm */; };
 		92B7A16B1CAE463D00CB24FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B7A16A1CAE463D00CB24FE /* main.m */; };
@@ -63,11 +64,19 @@
 		927088B81CAC19DF000C2550 /* Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Server; sourceTree = BUILT_PRODUCTS_DIR; };
 		927088C41CAC2015000C2550 /* Client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Client; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A069561CB04123005C4516 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		92A069591CB19542005C4516 /* AudioManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioManager.cpp; path = Sources/Audio/AudioManager.cpp; sourceTree = SOURCE_ROOT; };
-		92A0695A1CB19542005C4516 /* AudioManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AudioManager.hpp; path = Sources/Audio/AudioManager.hpp; sourceTree = SOURCE_ROOT; };
+		92A0695A1CB19542005C4516 /* System.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = System.hpp; path = Sources/Audio/System.hpp; sourceTree = SOURCE_ROOT; };
 		92A069611CB1ABB7005C4516 /* Tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tests; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A069681CB1AC09005C4516 /* AudioManagerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioManagerTest.cpp; path = Test/Audio/AudioManagerTest.cpp; sourceTree = SOURCE_ROOT; };
 		92A0696B1CB4F673005C4516 /* Option.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Option.hpp; path = Sources/Option.hpp; sourceTree = SOURCE_ROOT; };
+		92A0696D1CB63F33005C4516 /* Device.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Device.hpp; path = Test/Audio/Device.hpp; sourceTree = SOURCE_ROOT; };
+		92A069701CB63F47005C4516 /* Stream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Stream.hpp; path = Test/Audio/Stream.hpp; sourceTree = SOURCE_ROOT; };
+		92A069721CB63F95005C4516 /* Audio.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Audio.hpp; path = Test/Audio/Audio.hpp; sourceTree = SOURCE_ROOT; };
+		92A069731CB6405F005C4516 /* Types.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Types.hpp; path = Test/Audio/Types.hpp; sourceTree = SOURCE_ROOT; };
+		92A069741CB6427E005C4516 /* Helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Helper.cpp; path = Test/Audio/Helper.cpp; sourceTree = SOURCE_ROOT; };
+		92A069751CB6427E005C4516 /* Helper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Helper.hpp; path = Test/Audio/Helper.hpp; sourceTree = SOURCE_ROOT; };
+		92A069781CB90421005C4516 /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Object.hpp; path = Test/Audio/Object.hpp; sourceTree = SOURCE_ROOT; };
+		92A0697C1CB9165D005C4516 /* PropertyAddress.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PropertyAddress.hpp; path = Test/Audio/PropertyAddress.hpp; sourceTree = SOURCE_ROOT; };
+		92A0697E1CB949B8005C4516 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Object.cpp; path = Test/Audio/Object.cpp; sourceTree = SOURCE_ROOT; };
 		92B7A15E1CAD93EE00CB24FE /* server.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = server.mm; path = Sources/server.mm; sourceTree = SOURCE_ROOT; };
 		92B7A1601CAD940200CB24FE /* client.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = client.mm; path = Sources/client.mm; sourceTree = SOURCE_ROOT; };
 		92B7A1621CAD990C00CB24FE /* shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = shared.h; path = Sources/shared.h; sourceTree = SOURCE_ROOT; };
@@ -170,8 +179,16 @@
 		92A069581CB19510005C4516 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				92A0695A1CB19542005C4516 /* AudioManager.hpp */,
-				92A069591CB19542005C4516 /* AudioManager.cpp */,
+				92A069721CB63F95005C4516 /* Audio.hpp */,
+				92A069731CB6405F005C4516 /* Types.hpp */,
+				92A069751CB6427E005C4516 /* Helper.hpp */,
+				92A069741CB6427E005C4516 /* Helper.cpp */,
+				92A0697C1CB9165D005C4516 /* PropertyAddress.hpp */,
+				92A069781CB90421005C4516 /* Object.hpp */,
+				92A0697E1CB949B8005C4516 /* Object.cpp */,
+				92A0696D1CB63F33005C4516 /* Device.hpp */,
+				92A069701CB63F47005C4516 /* Stream.hpp */,
+				92A0695A1CB19542005C4516 /* System.hpp */,
 			);
 			name = Audio;
 			path = Server;
@@ -516,7 +533,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A0695B1CB19542005C4516 /* AudioManager.cpp in Sources */,
 				92B7A15F1CAD93EE00CB24FE /* server.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,6 +550,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A069691CB1AC09005C4516 /* AudioManagerTest.cpp in Sources */,
+				92A069761CB6427E005C4516 /* Helper.cpp in Sources */,
+				92A0697F1CB949B8005C4516 /* Object.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
